@@ -1,0 +1,56 @@
+{
+  "name": "rapid-portfinder",
+  "version": "1.0.4",
+  "description": "A fast utility to find, scan, and reserve available network ports in Node.js applications.",
+  "license": "MIT",
+  "keywords": [
+    "port",
+    "portfinder",
+    "free-port",
+    "open-port",
+    "port-scanner",
+    "port-detection",
+    "network",
+    "tcp",
+    "udp",
+    "server",
+    "nodejs",
+    "find-port",
+    "reserve-port",
+    "network-utilities",
+    "port-availability"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xuanhoa88/rapid-portfinder.git"
+  },
+  "author": {
+    "name": "XuaNguyen",
+    "email": "xuan.0211@gmail.com"
+  },
+  "engines": {
+    "node": ">=14.x"
+  },
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "rebuild": "npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint **/*.js --no-cache",
+    "lint:fix": "npm run lint -- --fix",
+    "clean": "rimraf dist",
+    "clean:all": "rimraf dist node_modules",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "eslint": "8.57.1",
+    "eslint-config-prettier": "8.10.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "jest": "28.1.3",
+    "rimraf": "4.4.1",
+    "typescript": "4.9.5"
+  }
+}
