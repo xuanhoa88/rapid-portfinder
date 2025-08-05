@@ -35,6 +35,7 @@
 	"types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --build",
+    "prepare": "npm run build",
     "rebuild": "npm run build",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -42,8 +43,7 @@
     "lint": "eslint **/*.js --no-cache",
     "lint:fix": "npm run lint -- --fix",
     "clean": "rimraf dist",
-    "clean:all": "rimraf dist node_modules",
-    "prepublishOnly": "npm run clean && npm run build"
+    "clean:all": "rimraf dist node_modules"
   },
   "devDependencies": {
     "eslint": "8.57.1",
