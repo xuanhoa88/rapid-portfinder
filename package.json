@@ -46,7 +46,7 @@
     "clean:all": "rimraf dist node_modules"
   },
   "devDependencies": {
-    "eslint": "8.57.1",
+    "eslint": "8.22.0",
     "eslint-config-prettier": "8.10.0",
     "eslint-plugin-prettier": "5.2.1",
     "jest": "28.1.3",
