@@ -1,6 +1,6 @@
 {
   "name": "rapid-portfinder",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A fast utility to find, scan, and reserve available network ports in Node.js applications.",
   "license": "MIT",
   "keywords": [
@@ -24,15 +24,12 @@
     "type": "git",
     "url": "https://github.com/xuanhoa88/rapid-portfinder.git"
   },
-  "author": {
-    "name": "XuaNguyen",
-    "email": "xuan.0211@gmail.com"
-  },
+  "author": "XuanNguyen <xuan.0211@gmail.com>",
   "engines": {
-    "node": ">=14.x"
+    "node": ">=14"
   },
-	"main": "./dist/index.js",
-	"types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc --build",
     "prepare": "npm run build",
